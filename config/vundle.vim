@@ -18,6 +18,9 @@ Plugin 'Valloric/YouCompleteMe'
 " Needs additional steps (e.g. GoInstallBinaries)
 Plugin 'fatih/vim-go'
 
+" Dependency of faith/vim-go
+Plugin 'ctrlpvim/ctrlp.vim'
+
 Plugin 'artur-shaik/vim-javacomplete2'
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
