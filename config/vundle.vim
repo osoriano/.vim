@@ -26,6 +26,8 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 Plugin 'majutsushi/tagbar'
 
+Plugin 'tpope/vim-abolish'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
