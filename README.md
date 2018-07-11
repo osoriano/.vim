@@ -7,7 +7,7 @@ Install Guide
 
 3. Configure plugins in ~/.vim/config/vundle.vim
    Most plugins will work out of the box, but some need additional steps
-   (e.g. complied components).
+   (e.g. compiled components).
 
 4. Run :PluginInstall inside of vim to install the plugins
 
