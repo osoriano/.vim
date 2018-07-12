@@ -15,17 +15,21 @@ Plugin 'VundleVim/Vundle.vim'
 " Needs additional steps
 Plugin 'Valloric/YouCompleteMe'
 
+" Dependency of faith/vim-go
+" fuzzy file, buffer, mru, tag, finder for Vim
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " Needs additional steps (e.g. GoInstallBinaries)
 Plugin 'fatih/vim-go'
 
-" Dependency of faith/vim-go
-Plugin 'ctrlpvim/ctrlp.vim'
+" Useful java plugin
+" Plugin 'artur-shaik/vim-javacomplete2'
+" autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
-Plugin 'artur-shaik/vim-javacomplete2'
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-
+" Sidebar to view ctags
 Plugin 'majutsushi/tagbar'
 
+" Supports find and replace of word variants
 Plugin 'tpope/vim-abolish'
 
 " All of your Plugins must be added before the following line
