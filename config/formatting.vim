@@ -10,6 +10,7 @@ set smarttab      " Make the tab key insert spaces or tabs to go to the next
 autocmd Filetype jade       setlocal tabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2
 autocmd Filetype yaml       setlocal tabstop=2 shiftwidth=2
+autocmd Filetype json       setlocal tabstop=2 shiftwidth=2
 
 " Remove trailing whitespace for all files
 fun! <SID>StripTrailingWhitespaces()
