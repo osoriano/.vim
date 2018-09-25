@@ -32,6 +32,35 @@ Plugin 'majutsushi/tagbar'
 " Supports find and replace of word variants
 Plugin 'tpope/vim-abolish'
 
+" Snippets
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+" Snipped expansion (tab by default) can interfere with YCM
+" Detect when a snip is visible, then expand it on <cr>
+" Also, use tabs for snippet navigation
+" See https://github.com/Valloric/YouCompleteMe/issues/420#issuecomment-55940039
+"     https://github.com/SirVer/ultisnips/issues/376#issuecomment-69033351
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsExpandTrigger = "<NUL>"
+let g:UltiSnipsEditSplit="vertical"
+let g:ulti_expand_or_jump_res = 0
+let g:ultisnips_python_quoting_style="single"
+function ExpandSnippetOrCarriageReturn()
+    let snippet = UltiSnips#ExpandSnippetOrJump()
+    if g:ulti_expand_or_jump_res > 0
+        return snippet
+    else
+        return "\<CR>"
+    endif
+endfunction
+
+inoremap <expr> <CR> pumvisible() ? "\<C-R>=ExpandSnippetOrCarriageReturn()\<CR>" : "\<CR>"
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
