@@ -12,6 +12,7 @@ autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2
 autocmd Filetype yaml       setlocal tabstop=2 shiftwidth=2
 autocmd Filetype json       setlocal tabstop=2 shiftwidth=2
 autocmd Filetype html       setlocal tabstop=2 shiftwidth=2
+autocmd Filetype css        setlocal tabstop=2 shiftwidth=2
 
 " Remove trailing whitespace for all files
 fun! <SID>StripTrailingWhitespaces()
