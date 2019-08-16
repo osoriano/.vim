@@ -12,3 +12,8 @@ Install Guide
 4. Run :PluginInstall inside of vim to install the plugins
 
 Enjoy!
+
+
+Vim Cheat Sheet
+===============
+Instead of ESC to exit insert mode, try C-[ (for US Keyboards)
