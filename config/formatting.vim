@@ -1,18 +1,13 @@
-set tabstop=4     " Width of a hard tabstop measured in spaces
+set tabstop=2     " Width of a hard tabstop measured in spaces
 set softtabstop=0 " Don't fill spaces to simulate tab stops
-set shiftwidth=4  " Width of an indent in spaces
+set shiftwidth=2  " Width of an indent in spaces
 set expandtab     " Insert spaces instead of tab characters
 set smarttab      " Make the tab key insert spaces or tabs to go to the next
                   " indent of the next tabstop when the cursor is at the
                   " beginning of a line
 
 " Override tab size for certain files
-autocmd Filetype jade       setlocal tabstop=2 shiftwidth=2
-autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2
-autocmd Filetype yaml       setlocal tabstop=2 shiftwidth=2
-autocmd Filetype json       setlocal tabstop=2 shiftwidth=2
-autocmd Filetype html       setlocal tabstop=2 shiftwidth=2
-autocmd Filetype css        setlocal tabstop=2 shiftwidth=2
+autocmd Filetype java setlocal tabstop=4 shiftwidth=4
 
 " Remove trailing whitespace for all files
 fun! <SID>StripTrailingWhitespaces()
