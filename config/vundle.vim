@@ -39,6 +39,9 @@ Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 
+" Highlight pig files
+Plugin 'motus/pig.vim'
+
 " Snipped expansion (tab by default) can interfere with YCM
 " Detect when a snip is visible, then expand it on <cr>
 " Also, use tabs for snippet navigation
