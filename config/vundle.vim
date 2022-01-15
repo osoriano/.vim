@@ -42,6 +42,9 @@ Plugin 'honza/vim-snippets'
 " Highlight pig files
 Plugin 'motus/pig.vim'
 
+" Kotlin files
+Plugin 'udalov/kotlin-vim'
+
 " Snipped expansion (tab by default) can interfere with YCM
 " Detect when a snip is visible, then expand it on <cr>
 " Also, use tabs for snippet navigation
